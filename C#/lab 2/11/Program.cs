@@ -19,8 +19,7 @@ namespace Zad11
                     {
                         if (j == 0)
                         {
-                            Console.WriteLine("\nWarning: ");
-                            Console.WriteLine("It’s impossible to put a punctuation mark at the beginning of a sentence.\n=============");
+                            Console.WriteLine("It’s impossible to put a punctuation mark at the beginning of a sentence.");
                             break;
                         }
                         if (ch[j] == ' ')
