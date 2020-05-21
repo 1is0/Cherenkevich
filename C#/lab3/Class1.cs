@@ -33,7 +33,7 @@ namespace Zad5
         }
         public override string ToString()
         {
-            string info = "Year of release: " + yearOfRelease + "; " + "Marc: " + Marc + "; " + "Color: " + Color + "; " + "Weight: " + Weight + ".";
+            string info = "Year of release: " + yearOfRelease + "; " + "Color: " + Color + "; " + "Weight: " + Weight + ".";
             return info;
         }
         public string this[int m]
@@ -51,7 +51,6 @@ namespace Zad5
         public Transport()
         {
             yearOfRelease = 2010;
-            Marc = "Opel";
             Color = "Red";
             TipeOfTransport = "Earth";
             Weight = 1900;
