@@ -1,0 +1,37 @@
+//---------------------------------------------------------------------------
+
+#ifndef Unit2H
+#define Unit2H
+#include "Unit1.h"
+class MRectangle
+{
+	public:
+	int XSize = 200;
+	int YSize = 100;
+	int XCord = 200;
+	int YCord = 150;
+	void TrainMove(int a,int b)
+	{
+		XCord += a;
+		YCord += b;
+		return ;
+	}
+	void Drow()
+	{
+		Form1->Canvas->Pen->Color = clBlue;
+		Form1->Canvas->Brush->Color = clBlue;
+		Form1->Canvas->Rectangle(XCord,YCord,XCord+XSize,YCord+YSize);
+		Form1->Canvas->Pen->Color = clBlack;
+		Form1->Canvas->Brush->Color = clBlack;
+		Form1->Canvas->Rectangle(XCord + XSize -50,YCord - 100, XCord + XSize - 20, YCord);
+	}
+
+	void MCanvaClean ()
+	{
+		Form1->Canvas->Pen->Color = clWhite;
+		Form1->Canvas->Brush->Color = clWhite;
+		Form1->Canvas->Rectangle(0,0,1920,1080);
+    }
+};
+//---------------------------------------------------------------------------
+#endif
