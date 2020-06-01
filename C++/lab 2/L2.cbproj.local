@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.825,=J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L1\Unit2.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.252,J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L1\Unit2.dfm=J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L2\Unit2.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.252,J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L1\Unit2.h=J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L2\Unit2.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.252,J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L1\Unit2.cpp=J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L2\Unit2.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.421,J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L2\Workspace.h=J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L2\Unit2.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.851,=J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L2\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.308,J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L2\Project1PCH1.h=J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L2\L2PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.593,J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L1\Project1.cbproj=J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L2\Project1.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.421,J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L2\Workspace.dfm=J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L2\Unit2.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.352,J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L2\Student.h=J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L2\Unit1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.321,J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L2\Project1.cbproj=J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L2\L2.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.421,J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L2\Workspace.cpp=J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L2\Unit2.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.352,J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L2\Student.cpp=J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L2\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.560,=J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L1\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.862,J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L1\Project1PCH1.h=J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L2\Project1PCH1.h</Transaction>
+  </Transactions>
+</BorlandProject>
