@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.224,J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L1\Project1.cbproj=J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L5\L5.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.686,J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L1\Project1PCH1.h=J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L5\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.907,=J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L1\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.042,J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L5\Unit1.h=J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L5\Eleven.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.385,J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L1\Unit1.dfm=J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L1\Interface.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.840,J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L1\Queue.cpp=J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L5\Queue.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.023,J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L1\Interface.h=J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L5\Interface.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.023,J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L1\Interface.cpp=J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L5\Interface.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.469,J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L5\Eleven.h=J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L5\RandItems.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.469,J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L5\Eleven.cpp=J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L5\RandItems.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.931,J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L1\Unit1.h=J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L1\Queue.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.931,J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L1\Unit1.cpp=J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L1\Queue.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.840,J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L1\Queue.h=J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L5\Queue.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.427,=J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L5\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.042,J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L5\Unit1.cpp=J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L5\Eleven.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.203,J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L5\Project1PCH1.h=J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L5\L5PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.385,J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L1\Unit1.h=J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L1\Interface.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.023,J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L1\Interface.dfm=J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L5\Interface.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.458,=J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L1\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.274,=J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L1\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.385,J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L1\Unit1.cpp=J:\BSUIR STUFF\2 SEM\Labs\BA&amp;P\L1\Interface.cpp</Transaction>
+  </Transactions>
+</BorlandProject>
