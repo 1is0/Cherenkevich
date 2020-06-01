@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.208,E:\cpp\Unit2.cpp=E:\C++\1lab\1task\Unit2.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.770,=E:\cpp\Unit2.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.999,E:\cpp\Project1.cbproj=E:\C++\1lab\1task\Project1.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.966,E:\cpp\Unit1.h=E:\C++\1lab\1task\Unit1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.629,E:\cpp\Project1PCH1.h=E:\C++\1lab\1task\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.547,=E:\cpp\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.208,E:\cpp\Unit2.h=E:\C++\1lab\1task\Unit2.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.118,E:\cpp\Unit3.cpp=E:\C++\1lab\1task\Unit3.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.961,=E:\cpp\Unit3.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.966,E:\cpp\Unit1.dfm=E:\C++\1lab\1task\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.118,E:\cpp\Unit3.h=E:\C++\1lab\1task\Unit3.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.281,=E:\cpp\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.966,E:\cpp\Unit1.cpp=E:\C++\1lab\1task\Unit1.cpp</Transaction>
+  </Transactions>
+</BorlandProject>
