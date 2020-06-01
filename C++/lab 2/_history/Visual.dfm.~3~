@@ -1,0 +1,254 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 455
+  ClientWidth = 777
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Memo1: TMemo
+    Left = 417
+    Top = 0
+    Width = 360
+    Height = 455
+    Align = alRight
+    Lines.Strings = (
+      'Memo1')
+    TabOrder = 0
+  end
+  object GroupBox1: TGroupBox
+    Left = 0
+    Top = 0
+    Width = 417
+    Height = 455
+    Align = alClient
+    Caption = 'GroupBox1'
+    TabOrder = 1
+    ExplicitLeft = -6
+    object Name: TLabel
+      Left = 34
+      Top = 40
+      Width = 46
+      Height = 22
+      Caption = 'Name'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -17
+      Font.Name = 'Yu Gothic'
+      Font.Style = []
+      ParentFont = False
+    end
+    object LMath: TLabel
+      Left = 34
+      Top = 104
+      Width = 41
+      Height = 22
+      Caption = 'Math'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -17
+      Font.Name = 'Yu Gothic'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label1: TLabel
+      Left = 25
+      Top = 140
+      Width = 60
+      Height = 22
+      Caption = 'Physics'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -17
+      Font.Name = 'Yu Gothic'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label2: TLabel
+      Left = 28
+      Top = 176
+      Width = 57
+      Height = 22
+      Caption = 'English'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -17
+      Font.Name = 'Yu Gothic'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label3: TLabel
+      Left = 81
+      Top = 73
+      Width = 101
+      Height = 22
+      Caption = 'Exam results'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -17
+      Font.Name = 'Yu Gothic'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label4: TLabel
+      Left = 5
+      Top = 212
+      Width = 80
+      Height = 22
+      Caption = 'Certificate'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -17
+      Font.Name = 'Yu Gothic'
+      Font.Style = []
+      ParentFont = False
+    end
+    object ComboBox1: TComboBox
+      Left = 91
+      Top = 37
+      Width = 145
+      Height = 30
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -17
+      Font.Name = 'Yu Gothic'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 0
+      Text = 'ComboBox1'
+    end
+    object Math: TEdit
+      Left = 91
+      Top = 101
+      Width = 121
+      Height = 30
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -17
+      Font.Name = 'Yu Gothic'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 1
+    end
+    object Physics: TEdit
+      Left = 91
+      Top = 137
+      Width = 121
+      Height = 30
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -17
+      Font.Name = 'Yu Gothic'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 2
+    end
+    object English: TEdit
+      Left = 91
+      Top = 173
+      Width = 121
+      Height = 30
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -17
+      Font.Name = 'Yu Gothic'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 3
+    end
+    object Certificate: TEdit
+      Left = 91
+      Top = 209
+      Width = 121
+      Height = 30
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -17
+      Font.Name = 'Yu Gothic'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 4
+    end
+    object ADD: TButton
+      Left = 232
+      Top = 256
+      Width = 153
+      Height = 33
+      Caption = 'ADD'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -17
+      Font.Name = 'Yu Gothic'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 5
+    end
+    object Open: TButton
+      Left = 232
+      Top = 295
+      Width = 153
+      Height = 33
+      Caption = 'Open'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -17
+      Font.Name = 'Yu Gothic'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 6
+    end
+    object Sort: TButton
+      Left = 232
+      Top = 334
+      Width = 153
+      Height = 33
+      Caption = 'Sort'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -17
+      Font.Name = 'Yu Gothic'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 7
+    end
+    object Search: TButton
+      Left = 232
+      Top = 373
+      Width = 153
+      Height = 33
+      Caption = 'Search'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -17
+      Font.Name = 'Yu Gothic'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 8
+    end
+    object Save: TButton
+      Left = 232
+      Top = 412
+      Width = 153
+      Height = 33
+      Caption = 'Save'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -17
+      Font.Name = 'Yu Gothic'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 9
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 480
+    Top = 16
+  end
+end
