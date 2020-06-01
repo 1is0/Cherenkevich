@@ -1,0 +1,119 @@
+//---------------------------------------------------------------------------
+
+#ifndef Unit2H
+#define Unit2H
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+//---------------------------------------------------------------------------
+class TForm2 : public TForm
+{
+__published:	// IDE-managed Components
+private:	// User declarations
+public:		// User declarations
+	__fastcall TForm2(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TForm2 *Form2;
+//---------------------------------------------------------------------------
+#endif
+
+
+class Figure {
+	 protected :
+		   float area, per;
+	 public :
+		   virtual void Perimeter(TEdit *Edit){
+		   };
+		   virtual void Area(TEdit *Edit){
+		   };
+		   virtual void GravCenter(TEdit *Edit){
+		   };
+		   virtual void Draw(){
+		   };
+ };
+
+
+
+ class Ellipse : public Figure {
+	 private :
+ };
+
+
+
+
+
+
+ class Triangle : public Figure {
+	   friend class RightTriangle;
+	   private : float X1, Y1, X2, Y2, X3, Y3;
+	   public:
+		   Triangle(float X1, float Y1, float X2, float Y2, float X3, float Y3) {
+			   this->X1 = X1;
+			   this->Y1 = Y1;
+			   this->Y2 = Y2;
+			   this->X2 = X2;
+			   this->Y3 = Y3;
+			   this->X3 = X3;
+		   }
+
+		   void Delete (TImage * Image) {
+			   Image->Canvas->Pen->Color = clWhite;
+               Image->Canvas->MoveTo(X1, Y1);
+				Image->Canvas->LineTo(X2, Y2);
+				Image->Canvas->MoveTo(X2, Y2);
+				Image->Canvas->LineTo(X3, Y3);
+				Image->Canvas->MoveTo(X3, Y3);
+				Image->Canvas->LineTo(X1, Y1);
+		   }
+
+		   void Perimeter(TEdit *Edit)  {
+				float S1 =  sqrt( pow(X1 - X2, 2) +  pow(Y1 - Y2, 2) );
+				float S2 =  sqrt( pow(X3 - X2, 2) +  pow(Y3 - Y2, 2) );
+				float S3 =  sqrt( pow(X1 - X3, 2) +  pow(Y1 - Y3, 2) );
+				per = S1 + S2 + S3;
+				Edit->Text = "P = " + FloatToStr(per);
+		   }
+
+		   void   Area (TEdit *Edit) {
+				float S1 =  sqrt( pow(X1 - X2, 2) +  pow(Y1 - Y2, 2) );
+				float S2 =  sqrt( pow(X3 - X2, 2) +  pow(Y3 - Y2, 2) );
+				float S3 =  sqrt( pow(X1 - X3, 2) +  pow(Y1 - Y3, 2) );
+				per = S1 + S2 + S3;
+				float half_per = per / 2;
+				area = sqrt(half_per * (half_per - S3) * (half_per - S2) *
+				(half_per - S1));
+				Edit->Text = "S = " + FloatToStr(area);
+		   }
+
+
+
+		   void GravCenter (TEdit *Edit) {
+			   float gravCenterX = (X1 + X2 + X3)/3;
+			   float gravCenterY = (Y1 + Y2 + Y3)/3;
+			   Edit->Text = "Coordinates of gravity center: X = "
+			   + FloatToStr(gravCenterX) + " Y = " + FloatToStr(gravCenterY);
+		   }
+
+
+		   void Draw(TImage *Image) {
+				Image->Canvas->MoveTo(X1, Y1);
+				Image->Canvas->LineTo(X2, Y2);
+				Image->Canvas->MoveTo(X2, Y2);
+				Image->Canvas->LineTo(X3, Y3);
+				Image->Canvas->MoveTo(X3, Y3);
+				Image->Canvas->LineTo(X1, Y1);
+		   }
+
+
+
+ };
+
+
+
+
+
+
+

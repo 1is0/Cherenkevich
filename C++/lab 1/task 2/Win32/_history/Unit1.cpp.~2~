@@ -1,0 +1,51 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "Unit1.h"
+#include "Unit2.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TForm1 *Form1;
+int X1, Y1, X2, Y2, counter = 0;
+bool Enter = false;
+//---------------------------------------------------------------------------
+__fastcall TForm1::TForm1(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::Image1MouseMove(TObject *Sender, TShiftState Shift, int X,
+		  int Y)
+{
+	   if (Shift.Contains(ssLeft) && counter == 0) {
+		   X1 = X;
+		   Y1 = Y;
+		   Image1->Canvas->MoveTo(X1, Y1);
+		   counter++;
+	   }
+	   else if (!Shift.Contains(ssLeft)&& counter > 0){
+		   X2 = X;
+		   Y2 = Y;
+		   Image1->Canvas->LineTo(X2, Y2);
+		   counter = 0;
+	   }
+
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::FormCreate(TObject *Sender)
+{
+		 Image1->Canvas->Pen->Color = clRed;
+}
+//---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
