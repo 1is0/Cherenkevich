@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.491,=C:\Programming\BuilderProjects\Laba2CC\Unit2.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.891,C:\Programming\BuilderProjects\Laba2CC\Unit2.cpp=C:\Programming\BuilderProjects\Laba2CC\student.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.278,=C:\Users\stani\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.460,C:\Users\stani\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Programming\BuilderProjects\Laba2CC\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.793,C:\Users\stani\Documents\Embarcadero\Studio\Projects\Project1.cbproj=C:\Programming\BuilderProjects\Laba2CC\Project1.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.808,=C:\Programming\BuilderProjects\Laba2CC\Unit3.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.891,C:\Programming\BuilderProjects\Laba2CC\Unit2.h=C:\Programming\BuilderProjects\Laba2CC\student.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.676,=C:\Users\stani\Documents\Embarcadero\Studio\Projects\Unit2.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.460,C:\Users\stani\Documents\Embarcadero\Studio\Projects\Unit1.cpp=C:\Programming\BuilderProjects\Laba2CC\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.354,=C:\Users\stani\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.800,C:\Users\stani\Documents\Embarcadero\Studio\Projects\Unit2.cpp=C:\Programming\BuilderProjects\Laba2CC\Unit2.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.898,C:\Users\stani\Documents\Embarcadero\Studio\Projects\Project1PCH1.h=C:\Programming\BuilderProjects\Laba2CC\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.460,C:\Users\stani\Documents\Embarcadero\Studio\Projects\Unit1.h=C:\Programming\BuilderProjects\Laba2CC\Unit1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.800,C:\Users\stani\Documents\Embarcadero\Studio\Projects\Unit2.h=C:\Programming\BuilderProjects\Laba2CC\Unit2.h</Transaction>
+  </Transactions>
+</BorlandProject>
