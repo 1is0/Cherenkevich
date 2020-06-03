@@ -1,0 +1,318 @@
+//---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "MyList.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+
+
+List :: List()
+{
+	size = 0;
+	head = nullptr;
+}
+
+int List :: push_back(AnsiString new_name, AnsiString new_number, int new_hours, int new_rate)
+{
+	bool A = CheckString(new_name);
+	if(!A)
+		throw myexcep("Wrong name!", new_name);
+
+	bool C = CheckNumber(new_hours);
+	if(!C)
+		throw myexcep("Wrong working hours!", IntToStr(new_hours));
+
+	bool D = CheckNumber(new_rate);
+	if(!D)
+		throw myexcep("Wrong rate!", IntToStr(new_rate));
+
+
+	if(head == nullptr)
+	{
+	   head  = new Node(new_name, new_number, new_hours, new_rate);
+	}
+	else
+	{
+	   Node *current = this -> head;
+	   while(current -> pNext != nullptr)
+	   {
+		   if(current -> name == new_name && current -> number == new_number && current -> hours == new_hours && current -> rate == new_rate) return 0;
+			current = current->pNext;
+	   }
+	   if(current->name == new_name && current -> number == new_number && current -> hours == new_hours && current -> rate == new_rate) return 0;
+			   current->pNext = new Node(new_name, new_number, new_hours, new_rate);
+	}
+	 size++;
+	 return 1;
+}
+
+AnsiString List :: GetName(int index)
+{
+ int i = 0;
+ Node *current = this -> head;
+	   while(current -> pNext != nullptr)
+	   {
+	   if(i == index) return current -> name;
+			current = current -> pNext;
+			i++;
+	   }
+	  return current -> name;
+}
+
+AnsiString List :: GetNumber(int index)
+{
+ int i = 0;
+ Node *current = this -> head;
+	   while(current -> pNext != nullptr)
+	   {
+	   if(i == index) return current -> number;
+			current = current -> pNext;
+			i++;
+	   }
+	  return current -> number;
+}
+
+int List :: GetHours(int index)
+{
+ int i = 0;
+ Node *current = this -> head;
+	   while(current->pNext != nullptr)
+	   {
+	   if(i == index) return current -> hours;
+			current = current -> pNext;
+			 i++;
+	   }
+	  return current -> hours;
+}
+
+int List :: GetRate(int index)
+{
+ int i = 0;
+ Node *current = this->head;
+	   while(current->pNext != nullptr)
+	   {
+	   if(i == index) return current -> rate;
+			current = current->pNext;
+			 i++;
+	   }
+	  return current -> rate;
+}
+
+
+int List :: GetSize()
+{
+return size;
+}
+
+void List :: pop_front()
+{
+  Node *temp = head;
+  head = head->pNext;
+  delete temp;
+  size--;
+}
+
+void List :: clear()
+{
+   while(size)
+   {
+     pop_front();
+   }
+}
+
+bool List::CheckString(AnsiString s)
+{
+	for(int i =  1; i <= s.Length(); i++)
+	{
+		if(s[i] > '0' && s[i] < '9')
+			return false;
+	}
+	return true;
+}
+
+bool List::CheckNumber(AnsiString s)
+{
+	for(int i = 1; i <= s.Length(); i++)
+	{
+		if(s[i] < '0' || s[i] > '9')
+			return false;
+	}
+	return true;
+}
+
+
+void List :: removeAt(int index)
+{
+	if(index < 0 || index > size)
+		throw myexcep("Unexisting element!", "20");
+  if(index == 0)
+  {
+	 pop_front();
+  }
+  else
+  {
+	 Node *previous = this->head;
+	 for (int i = 0; i < index - 1; i++)
+	 {
+		  previous = previous->pNext;
+	 }
+
+	 Node *toDelete = previous->pNext;
+	 previous->pNext = toDelete->pNext;
+
+	 delete toDelete;
+     size--;
+  }
+}
+
+
+int List :: Calculate(Node *current)
+{
+	int salary = 0;
+	for(int i = 0; i < 144 || i < current -> hours; i++)
+		salary += current -> rate;
+
+	if(current -> hours < 144)
+	{
+		return salary;
+	}
+
+	else
+	{
+		int extra = current -> hours;
+		while(extra > 144)
+		{
+			salary += current -> rate;
+			extra--;
+		}
+		return salary;
+	}
+
+	return 0;
+}
+
+void List :: Search(AnsiString Name, TMemo* Screen)
+{
+	bool A = CheckString(Name);
+	if(!A)
+		throw myexcep("Wrong name!", Name);
+
+	Node *current = this -> head;
+
+	if(current -> name == Name)
+	{
+		Screen -> Clear();
+		Screen -> Lines -> Add(current -> name);
+		Screen -> Lines -> Add(current -> number);
+		Screen -> Lines -> Add(IntToStr(current -> hours));
+		Screen -> Lines -> Add(IntToStr(current -> rate));
+		return;
+    }
+
+	if(head -> pNext == nullptr)
+	{
+		if(current -> name == Name)
+		{
+            Screen -> Clear();
+			Screen -> Lines -> Add(current -> name);
+			Screen -> Lines -> Add(current -> number);
+			Screen -> Lines -> Add(IntToStr(current -> hours));
+			Screen -> Lines -> Add(IntToStr(current -> rate));
+			return;
+		}
+
+		else
+            return;
+	}
+	else
+	{
+		while(current -> pNext != nullptr)
+		{
+            current = current -> pNext;
+			if(current -> name == Name)
+			{
+				Screen -> Clear();
+				Screen -> Lines -> Add(current -> name);
+				Screen -> Lines -> Add(current -> number);
+				Screen -> Lines -> Add(IntToStr(current -> hours));
+				Screen -> Lines -> Add(IntToStr(current -> rate));
+				return;
+			}
+		}
+	}
+
+}
+
+void List :: SearchSalary(int amount, TMemo* Screen)
+{
+	Node *current = this -> head;
+	if(GetSize() == 1)
+	{
+		if(Calculate(current) >= amount)
+		{
+            Screen -> Clear();
+			Screen -> Lines -> Add(current -> name);
+			Screen -> Lines -> Add(current -> number);
+			Screen -> Lines -> Add(Calculate(current));
+			return;
+		}
+	}
+
+	else
+	{
+		Screen -> Clear();
+		while(current -> pNext != nullptr)
+		{
+			Screen -> Lines -> Add(current -> name);
+			Screen -> Lines -> Add(current -> number);
+			Screen -> Lines -> Add(Calculate(current));
+			current = current -> pNext;
+		}
+
+		if(Calculate(current) >= amount)
+		{
+            Screen -> Clear();
+			Screen -> Lines -> Add(current -> name);
+			Screen -> Lines -> Add(current -> number);
+			Screen -> Lines -> Add(Calculate(current));
+			return;
+		}
+	}
+}
+
+void List :: Show(TMemo *Screen)
+{
+	Node *current = this -> head;
+	if(size == 1)
+	{
+		Screen -> Clear();
+		Screen -> Lines -> Add(current -> name);
+		Screen -> Lines -> Add(current -> number);
+		Screen -> Lines -> Add(IntToStr(current -> hours));
+		Screen -> Lines -> Add(IntToStr(current -> rate));
+		return;
+	}
+
+	Screen -> Clear();
+	while(current -> pNext != nullptr)
+	{
+		Screen -> Lines -> Add(current -> name);
+		Screen -> Lines -> Add(current -> number);
+		Screen -> Lines -> Add(IntToStr(current -> hours));
+		Screen -> Lines -> Add(IntToStr(current -> rate));
+		current = current -> pNext;
+	}
+	Screen -> Lines -> Add(current -> name);
+	Screen -> Lines -> Add(current -> number);
+	Screen -> Lines -> Add(IntToStr(current -> hours));
+	Screen -> Lines -> Add(IntToStr(current -> rate));
+}
+
+List :: ~List()
+{
+  clear();
+}
+
+
+

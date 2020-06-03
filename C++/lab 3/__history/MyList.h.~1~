@@ -1,0 +1,45 @@
+//---------------------------------------------------------------------------
+
+#ifndef MyListH
+#define MyListH
+//---------------------------------------------------------------------------
+#endif
+#include <vcl.h>
+
+class List
+{
+public:
+ List();
+ ~List();
+
+ int push_back(UnicodeString,int,int);
+ int GetSize();
+ void pop_front();
+ void clear();
+ void removeAt(int);
+ UnicodeString GetName(int);
+ int GetDetails(int);
+ int GetWorkshop(int);
+
+private:
+	class Node
+	{
+	public:
+	Node *pNext;
+	UnicodeString name;
+	int details;
+	int workshop;
+
+	  Node(UnicodeString name, int details = NULL, int workshop = NULL, Node *pNext = nullptr)
+	  {
+		 this->name = name;
+		 this->details = details;
+		 this->workshop = workshop;
+         this->pNext = pNext;
+	  }
+	};
+
+	Node *head;
+    int size;
+};
+

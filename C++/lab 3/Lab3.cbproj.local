@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/05/27 17:48:20.000.907,=C:\Users\George_PC\Documents\Embarcadero\Studio\Projects\Project4PCH1.h</Transaction>
+    <Transaction>2020/05/27 17:48:21.000.132,=C:\Users\George_PC\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2020/05/27 17:48:33.000.291,C:\Users\George_PC\Documents\Embarcadero\Studio\Projects\Lab3PCH1.h=C:\Users\George_PC\Documents\Embarcadero\Studio\Projects\Project4PCH1.h</Transaction>
+    <Transaction>2020/05/27 17:48:33.000.294,C:\Users\George_PC\Documents\Embarcadero\Studio\Projects\Lab3.cbproj=C:\Users\George_PC\Documents\Embarcadero\Studio\Projects\Project4.cbproj</Transaction>
+    <Transaction>2020/05/27 17:48:41.000.747,=C:\Users\George_PC\Documents\Embarcadero\Studio\Projects\Unit2.cpp</Transaction>
+    <Transaction>2020/05/27 17:48:50.000.887,C:\Users\George_PC\Documents\Embarcadero\Studio\Projects\MyList.h=C:\Users\George_PC\Documents\Embarcadero\Studio\Projects\Unit2.h</Transaction>
+    <Transaction>2020/05/27 17:48:50.000.887,C:\Users\George_PC\Documents\Embarcadero\Studio\Projects\MyList.cpp=C:\Users\George_PC\Documents\Embarcadero\Studio\Projects\Unit2.cpp</Transaction>
+    <Transaction>2020/05/27 17:49:28.000.115,C:\Users\George_PC\Desktop\Labs\sem 2\OAIP\Lab 3\MyList.h=C:\Users\George_PC\Documents\Embarcadero\Studio\Projects\MyList.h</Transaction>
+    <Transaction>2020/05/27 17:49:28.000.115,C:\Users\George_PC\Desktop\Labs\sem 2\OAIP\Lab 3\MyList.cpp=C:\Users\George_PC\Documents\Embarcadero\Studio\Projects\MyList.cpp</Transaction>
+    <Transaction>2020/05/27 17:49:29.000.840,C:\Users\George_PC\Desktop\Labs\sem 2\OAIP\Lab 3\Unit1.cpp=C:\Users\George_PC\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2020/05/27 17:49:29.000.840,C:\Users\George_PC\Desktop\Labs\sem 2\OAIP\Lab 3\Unit1.h=C:\Users\George_PC\Documents\Embarcadero\Studio\Projects\Unit1.h</Transaction>
+    <Transaction>2020/05/27 17:49:29.000.840,C:\Users\George_PC\Desktop\Labs\sem 2\OAIP\Lab 3\Unit1.dfm=C:\Users\George_PC\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2020/05/27 17:49:31.000.587,C:\Users\George_PC\Desktop\Labs\sem 2\OAIP\Lab 3\Lab3PCH1.h=C:\Users\George_PC\Documents\Embarcadero\Studio\Projects\Lab3PCH1.h</Transaction>
+    <Transaction>2020/05/27 17:49:32.000.694,C:\Users\George_PC\Desktop\Labs\sem 2\OAIP\Lab 3\Lab3.cbproj=C:\Users\George_PC\Documents\Embarcadero\Studio\Projects\Lab3.cbproj</Transaction>
+    <Transaction>2020/05/27 18:14:07.000.988,=C:\Users\George_PC\Desktop\Labs\sem 2\OAIP\Lab 3\Unit2.cpp</Transaction>
+    <Transaction>2020/05/27 18:14:13.000.796,C:\Users\George_PC\Desktop\Labs\sem 2\OAIP\Lab 3\Unit2.cpp=C:\Users\George_PC\Desktop\Labs\sem 2\OAIP\Lab 3\MyException.cpp</Transaction>
+    <Transaction>2020/05/27 18:14:13.000.796,C:\Users\George_PC\Desktop\Labs\sem 2\OAIP\Lab 3\Unit2.h=C:\Users\George_PC\Desktop\Labs\sem 2\OAIP\Lab 3\MyException.h</Transaction>
+  </Transactions>
+</BorlandProject>

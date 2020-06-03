@@ -1,0 +1,50 @@
+//---------------------------------------------------------------------------
+
+#ifndef MyListH
+#define MyListH
+//---------------------------------------------------------------------------
+#endif
+#include <vcl.h>
+#include "MyException.h"
+
+class List
+{
+public:
+ List();
+ ~List();
+
+ int push_back(UnicodeString, UnicodeString,int,int);
+ int GetSize();
+ void pop_front();
+ void clear();
+ void removeAt(int);
+ UnicodeString GetName(int);
+ UnicodeString GetNumber(int);
+ int GetHours(int);
+ int GetRate(int);
+ bool CheckString(UnicodeString);
+ bool CheckNumber(UnicodeString);
+
+private:
+	class Node
+	{
+		public:
+		Node *pNext;
+		UnicodeString name;
+		UnicodeString number;
+		int hours;
+		int rate;
+
+		Node(UnicodeString Name, UnicodeString Number, int Hours, int Rate)
+		{
+			name = Name;
+			number = Number;
+			hours = Hours;
+			rate = Rate;
+        }
+	};
+
+	Node *head;
+    int size;
+};
+
