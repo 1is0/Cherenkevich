@@ -1,0 +1,17 @@
+//---------------------------------------------------------------------------
+
+#ifndef DoubleListH
+#define DoubleListH
+//---------------------------------------------------------------------------
+#endif
+
+class DoubleList
+{
+	public:
+
+		int value;
+		DoubleList *prev, *next;
+
+        void Show(DoubleList**, TListBox*);
+
+};

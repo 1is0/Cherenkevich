@@ -1,0 +1,14 @@
+//---------------------------------------------------------------------------
+
+#ifndef TaskH
+#define TaskH
+//---------------------------------------------------------------------------
+#endif
+
+class task: public hesh
+{
+  public:
+  task(int size);
+	double srb ();
+	void Print(TEdit*);
+};

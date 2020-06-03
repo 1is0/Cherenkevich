@@ -1,0 +1,24 @@
+//---------------------------------------------------------------------------
+
+#ifndef DoubleListH
+#define DoubleListH
+//---------------------------------------------------------------------------
+#endif
+
+class dvusp
+{
+	public:
+
+	  int x;
+	  dvusp *prev, *next;
+
+	  void Show(dvusp** head, TListBox *ListBox1);
+
+	  void MakeQ(dvusp** head,TEdit *Edit1,TListBox *ListBox1);
+
+	  bool IsEmpty(dvusp* head);
+
+	  dvusp* Delete(dvusp* head,TListBox *ListBox1);
+
+	  dvusp* Pop(dvusp* head, TEdit* Edit2, TListBox *ListBox1);
+};

@@ -1,0 +1,13 @@
+//---------------------------------------------------------------------------
+
+#ifndef SolutionH
+#define SolutionH
+#include "Tree.h"
+//---------------------------------------------------------------------------
+#endif
+
+class Solution : public tree
+{
+    void SearchLetter(tree *t, int k1, AnsiString letter, TMemo* Screen, TEdit* Edit);
+
+}

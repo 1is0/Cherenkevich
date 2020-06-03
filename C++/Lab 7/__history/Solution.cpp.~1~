@@ -1,0 +1,48 @@
+//---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "Solution.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+
+Solution :: Solution(int size) : Hash(size){}
+
+
+double Solution :: FindMean()
+{
+	int k = 0; sum = 0;
+	for(int i = 0; i < size; i++)
+	{
+		Stack* temp = new Stack;
+		temp = stacks[i];
+		while(temp)
+		{
+			k++;
+			sum += temp -> key;
+			temp = temp -> next;
+		}
+	}
+	double result = (double)sum / k;
+	return result;
+}
+
+
+void Solution :: Print(TEdit* Edit)
+{
+	int amount = 0;
+	int mean = FindMean();
+	for(int i = 0; i < size; i++)
+	{
+		Stack* temp = new Stack;
+		temp = stacks[i];
+		while(temp)
+		{
+			int current = temp -> key;
+			if(current < mean)
+				amount++;
+			temp = temp -> next;
+        }
+	}
+    Edit -> Text = IntToStr(amount);
+}

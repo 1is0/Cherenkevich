@@ -1,0 +1,23 @@
+//---------------------------------------------------------------------------
+
+#ifndef SolutionH
+#define SolutionH
+#include "DoubleList.h"
+#include <ctime>
+//---------------------------------------------------------------------------
+#endif
+
+class Solution : public DoubleList
+{
+	public:
+		Solution *prev, *next;
+		void Show(Solution**, TListBox*);
+		void Add(Solution**, TListBox*, int);
+        void Another(Solution**, TEdit*, TListBox*);
+		Solution* Remove(Solution*, int, TListBox*);
+		Solution* Create(Solution*, TEdit*, TListBox*);
+		Solution* Delete(Solution*, TListBox*);
+		void MaxMin(Solution**, TListBox*);
+		int FindMax(Solution**);
+		int FindMin(Solution**);
+};

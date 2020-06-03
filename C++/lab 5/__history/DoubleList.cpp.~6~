@@ -1,0 +1,74 @@
+//---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "DoubleList.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+
+
+void dvusp :: Show(dvusp** head, TListBox *ListBox1)
+	  {
+	   ListBox1->Clear();
+	   dvusp* curr = *head;
+	   while (curr)
+	   {
+		 ListBox1->Items->Add(curr->x);
+		 curr=curr->next;
+	   }
+	  }
+
+
+void dvusp :: makeQ(dvusp** head,TEdit *Edit1,TListBox *ListBox1)
+{
+	dvusp *ne = new dvusp;
+	ne->x=StrToInt(Edit1->Text);
+	ne->next=NULL;
+	ne->prev=NULL;
+	if (!*head)
+		*head = ne;
+	else
+	{
+
+		dvusp* curr = *head;
+		while (curr->next) curr=curr->next;
+		curr->next=ne;
+		ne->prev=curr;
+	}
+	(*head)->Show(head,ListBox1);
+}
+
+
+bool dvusp :: isempty(dvusp* head)
+{
+	if (head!=NULL)  return false;
+	else  return true;
+}
+
+
+dvusp* dvusp ::delSp(dvusp* head,TListBox *ListBox1)
+{
+	while(head)
+	{
+		dvusp* old_head = head;
+		head = head->next;
+		delete old_head;
+	}
+	head->Show(&head,ListBox1);
+	return head;
+}
+
+
+dvusp* dvusp :: vzyat (dvusp* head, TEdit* Edit2, TListBox *ListBox1)
+{
+	if(head)
+	{
+		dvusp* old_head = head;
+		int t=head->x;
+		head = head->next;
+		delete old_head;
+		Edit2->Text=IntToStr(t);
+		head->Show(&head,ListBox1);
+	}
+	return head;
+}

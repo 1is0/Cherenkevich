@@ -1,0 +1,15 @@
+//---------------------------------------------------------------------------
+
+#ifndef SolutionH
+#define SolutionH
+#include "Hash.h"
+//---------------------------------------------------------------------------
+#endif
+
+class Solution : public Hash
+{
+	public:
+		Solution(int size);
+		double FindMean();
+		void Print(Edit*);
+};

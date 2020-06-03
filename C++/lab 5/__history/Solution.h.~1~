@@ -1,0 +1,21 @@
+//---------------------------------------------------------------------------
+
+#ifndef SolutionH
+#define SolutionH
+#include "Unit2.h"
+#include <ctime>
+//---------------------------------------------------------------------------
+#endif
+
+class Solution : public DoubleList
+{
+	public:
+
+		Solution *prev, *next;
+		void Show(Solution**, TListBox*);
+		void MakeQueue(Solution**, TListBox*, int);
+		Solution* Delete(Solution*, int);
+		Solution* Create(TEdit*, Solution*, TListBox*);
+		Solution* Remove(Solution*, TListBox*);
+        Solution* Clear(Solution*, TListBox*);
+};

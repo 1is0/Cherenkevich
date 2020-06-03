@@ -1,0 +1,130 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 452
+  ClientWidth = 689
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 24
+    Top = 278
+    Width = 76
+    Height = 13
+    Caption = 'Hash table size:'
+  end
+  object Label2: TLabel
+    Left = 20
+    Top = 310
+    Width = 80
+    Height = 13
+    Caption = 'Number amount:'
+  end
+  object Label3: TLabel
+    Left = 399
+    Top = 223
+    Width = 92
+    Height = 13
+    Caption = 'Standard methods:'
+  end
+  object Label4: TLabel
+    Left = 168
+    Top = 376
+    Width = 242
+    Height = 13
+    Caption = 'Number of elements less than mean value in table:'
+  end
+  object Memo1: TMemo
+    Left = 24
+    Top = 8
+    Width = 185
+    Height = 209
+    Lines.Strings = (
+      'Memo1')
+    TabOrder = 0
+  end
+  object Memo2: TMemo
+    Left = 232
+    Top = 8
+    Width = 433
+    Height = 209
+    Lines.Strings = (
+      'Memo2')
+    TabOrder = 1
+  end
+  object Edit1: TEdit
+    Left = 106
+    Top = 275
+    Width = 103
+    Height = 21
+    TabOrder = 2
+  end
+  object Edit2: TEdit
+    Left = 106
+    Top = 307
+    Width = 103
+    Height = 21
+    TabOrder = 3
+  end
+  object Button1: TButton
+    Left = 320
+    Top = 251
+    Width = 75
+    Height = 25
+    Caption = 'Fill the table'
+    TabOrder = 4
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 416
+    Top = 251
+    Width = 75
+    Height = 25
+    Caption = 'Find smth'
+    TabOrder = 5
+  end
+  object Button3: TButton
+    Left = 512
+    Top = 251
+    Width = 75
+    Height = 25
+    Caption = 'Add element'
+    TabOrder = 6
+  end
+  object Button4: TButton
+    Left = 512
+    Top = 305
+    Width = 75
+    Height = 25
+    Caption = 'Clear the table'
+    TabOrder = 7
+  end
+  object Edit3: TEdit
+    Left = 320
+    Top = 307
+    Width = 75
+    Height = 21
+    TabOrder = 8
+  end
+  object Edit4: TEdit
+    Left = 416
+    Top = 307
+    Width = 75
+    Height = 21
+    TabOrder = 9
+  end
+  object Edit5: TEdit
+    Left = 416
+    Top = 373
+    Width = 67
+    Height = 21
+    TabOrder = 10
+  end
+end

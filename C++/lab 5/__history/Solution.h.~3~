@@ -1,0 +1,19 @@
+//---------------------------------------------------------------------------
+
+#ifndef SolutionH
+#define SolutionH
+#include "DoubleList.h"
+//---------------------------------------------------------------------------
+#endif
+
+class Solution : public DoubleList
+{
+	public:
+		Solution *prev, *next;
+		void Show(Solution**, TListBox*);
+		void Add(Solution**, TListBox*, int);
+		Solution* Remove(Solution*, int);
+		Solution* Create(Solution*, TEdit*, TListBox*);
+		Solution* Delete(Solution*, TListBox*);
+        Solution* MaxMin(Solution*, TListBox*);
+};

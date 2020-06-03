@@ -1,0 +1,21 @@
+//---------------------------------------------------------------------------
+
+#ifndef DoubleListH
+#define DoubleListH
+#include <vcl.h>
+//---------------------------------------------------------------------------
+#endif
+
+
+class DoubleList
+{
+	public:
+
+		int value;
+		DoubleList *prev, *next;
+		void Show(DoubleList**, TListBox*);
+		void MakeQueue(DoubleList**, TEdit*, TListBox*);
+		bool IsEmpty(DoubleList*);
+		DoubleList* Remove(DoubleList*, TListBox*);
+		DoubleList* Take(DoubleList*, TEdit*, TListBox*);
+};

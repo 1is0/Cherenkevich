@@ -1,0 +1,48 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "Unit1.h"
+#include "Solution.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TForm1 *Form1;
+DoubleList *head = new DoubleList;
+Solution *head2 = new Solution;
+//---------------------------------------------------------------------------
+__fastcall TForm1::TForm1(TComponent* Owner)
+	: TForm(Owner)
+{
+	head = NULL;
+	head2 = NULL;
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::Button1Click(TObject *Sender)
+{
+	head2 -> Another(&head2, Edit1, ListBox1);
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::Button2Click(TObject *Sender)
+{
+	head = head -> Delete(head, ListBox1);
+	head2 = head2 -> Delete(head2, ListBox1);
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::Button3Click(TObject *Sender)
+{
+    head2 = head2 -> Remove(head2, StrToInt(Edit2 -> Text), ListBox1);
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::Button4Click(TObject *Sender)
+{
+	head2 = head2 -> Delete(head2, ListBox1);
+    head2 = head2 -> Create(head2, Edit3, ListBox1);
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::Button5Click(TObject *Sender)
+{
+	head2 -> MaxMin(&head2, ListBox1);
+}
+//---------------------------------------------------------------------------

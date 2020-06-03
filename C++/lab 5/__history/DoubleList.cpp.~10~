@@ -1,0 +1,19 @@
+//---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "DoubleList.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+
+
+void DoubleList :: Show(DoubleList **head, TListBox* ListBox)
+{
+	ListBox -> Clear();
+	DoubleList *current = *head;
+	while(current)
+	{
+		ListBox -> Items -> Add(current -> value);
+		current = current -> next;
+	}
+}

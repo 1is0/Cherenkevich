@@ -1,0 +1,210 @@
+//---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "Solution.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+
+void Solution :: Show(Solution **head, TListBox* ListBox)
+{
+	ListBox -> Clear();
+	Solution *current = *head;
+	while(current)
+	{
+		ListBox -> Items -> Add(current -> value);
+		current = current -> next;
+	}
+}
+
+void Solution :: Add(Solution **head, TListBox* ListBox, int number)
+{
+	Solution *add = new Solution;
+	add -> value = number;
+	add -> prev = NULL;
+	add -> next = NULL;
+	if(!(*head))
+		*head = add;
+	else
+	{
+		Solution *current = *head;
+		while(current -> next)
+			current = current -> next;
+		current -> next = add;
+		add -> prev = current;
+	}
+	(*head) -> Show(head, ListBox);
+}
+
+void Solution :: Another(Solution **head, TEdit* Edit, TListBox* ListBox)
+{
+	Solution *add = new Solution;
+	add -> value = StrToInt(Edit -> Text);
+	add -> prev = NULL;
+	add -> next = NULL;
+    if(!(*head))
+		*head = add;
+	else
+	{
+		Solution *current = *head;
+		while(current -> next)
+			current = current -> next;
+		current -> next = add;
+		add -> prev = current;
+	}
+	(*head) -> Show(head, ListBox);
+}
+
+Solution* Solution :: Remove(Solution* head, int number, TListBox* ListBox)
+{
+	Solution *point;
+	Solution *current = head;
+	for(int i = 0; i < number && current != NULL; i++)
+		current = current -> next;
+
+	if (current != NULL)
+	{
+
+		if (current -> prev == NULL)
+		{
+			head = head -> next;
+			delete(current);
+			if (head)
+				head -> prev = NULL;
+			current = head;
+		}
+
+		else
+		{
+			if (current -> next == NULL)
+			{
+				current -> prev -> next = NULL;
+				delete(current);
+				current = head;
+			}
+
+			else
+			{
+				point = current->next;
+				current -> prev -> next = current -> next;
+				current -> next -> prev = current -> prev;
+				delete(current);
+				current = point;
+			}
+		}
+	}
+	head -> Show(&head, ListBox);
+	return head;
+}
+
+Solution* Solution :: Create(Solution* head, TEdit* Edit, TListBox* ListBox)
+{
+	srand(time(0));
+	int number = StrToInt(Edit -> Text);
+	if(number > 0)
+	{
+		for(int i = 0; i < number; ++i)
+			head -> Add(&head, ListBox, -100 + rand() % 200);
+	}
+	return head;
+}
+
+Solution* Solution :: Delete(Solution* head, TListBox* ListBox)
+{
+	while(head)
+	{
+		Solution* old = head;
+		head = head -> next;
+		delete old;
+	}
+	head -> Show(&head, ListBox);
+	return head;
+}
+
+int Solution :: FindMax(Solution** head)
+{
+	int position = 0;
+	int number = (*head) -> value;
+	Solution* current = *head;
+	while(current)
+	{
+		if((current -> value) > number)
+			number = current -> value;
+		current = current -> next;
+		position++;
+	}
+	return position;
+}
+
+int Solution :: FindMin(Solution **head)
+{
+	int position = 0;
+	int number = (*head) -> value;
+	Solution* current = *head;
+	while(current)
+	{
+		if((current -> value) < number)
+			number = current -> value;
+		current = current -> next;
+		position++;
+	}
+	return position;
+}
+
+int Solution :: MinValue(Solution **head)
+{
+	int number = (*head) -> value;
+	Solution* current = *head;
+	while(current)
+	{
+		if((current -> value) < number)
+			number = current -> value;
+		current = current -> next;
+	}
+	return number;
+}
+
+int Solution :: MaxValue(Solution **head)
+{
+    int number = (*head) -> value;
+	Solution* current = *head;
+	while(current)
+	{
+		if((current -> value) > number)
+			number = current -> value;
+		current = current -> next;
+	}
+	return number;
+}
+
+void Solution :: MaxMin(Solution* head, TListBox* ListBox)
+{
+	int positionMin = FindMin(&head);
+	int positionMax = FindMax(&head);
+	int valueMin = MinValue(&head);
+	int valueMax = MaxValue(&head);
+	int count = 0;
+
+	Solution* current = new Solution;
+	current = head;
+	while(current)
+	{
+		if(count == positionMin)
+		{
+			current -> value = valueMax;
+			count++;
+			current = current -> next;
+			continue;
+		}
+		if(count == positionMax)
+		{
+			current -> value = valueMin;
+			count++;
+			current = current -> next;
+            continue;
+		}
+		current = current -> next;
+        count++;
+	}
+    head -> Show(&head, ListBox);
+}

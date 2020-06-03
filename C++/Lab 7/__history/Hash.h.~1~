@@ -1,0 +1,25 @@
+//---------------------------------------------------------------------------
+
+#ifndef HashH
+#define HashH
+#include <vcl.h>
+#include "Stack.h"
+//---------------------------------------------------------------------------
+#endif
+
+class Hash
+{
+	protected:
+		Stack** stacks;
+		int size;
+
+	public:
+		Hash(int size);
+		int CreateKey(int x);
+		Stack* GetStack(int key);
+		void Add(int x);
+		void Remove(int x);
+		void Clear();
+		AnsiString Find(int i);
+        TStringList* Show();
+};

@@ -1,0 +1,51 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "Unit1.h"
+#include "Solution.h"
+#include <ctime>
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TForm1 *Form1;
+Hash* table = new Hash(3);
+
+//---------------------------------------------------------------------------
+__fastcall TForm1::TForm1(TComponent* Owner)
+	: TForm(Owner)
+{
+	Memo1 -> Clear();
+    Memo2 -> Clear();
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::Button1Click(TObject *Sender)
+{
+	int width = StrToInt(Edit1 -> Text);
+	Hash* one = new Hash(width);
+	Solution* two = new Solution(width);
+	table = one;
+
+	srand(time(0));
+	int elements = StrToInt(Edit2 -> Text);
+	TStringList *SL = new TStringList;
+	TStringList *S = new TStringList;
+	for(int i = 0; i < elements; i++)
+	{
+		int current = rand()%1000;
+		Stack* temp = new Stack;
+		table -> Add(current);
+		two -> Add(current);
+		SL -> Add(IntToStr(current));
+	}
+	Memo1 -> Lines = SL;
+	S = table -> Show();
+	Memo2 -> Lines = S;
+	delete SL;
+	delete S;
+
+	two -> Print(Edit5);
+	delete two;
+}
+//---------------------------------------------------------------------------

@@ -1,0 +1,24 @@
+//---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "Solution.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+
+void Solution :: SearchLetter(tree *t, int k1, AnsiString letter, TMemo* Screen, TEdit* Edit)
+{
+	if(t == NULL)
+		return;
+	if(t -> s[1] == letter[1])
+	{
+		Screen -> Lines -> Add(t -> s + " = " + IntToStr(t -> key));
+		int a = StrToInt(Edit -> Text);
+		a++;
+		Edit -> Text = a;
+	}
+	k1++;
+	SearchLetter(t -> l, k1, letter, Screen, Edit);
+	SearchLetter(t -> r, k1, letter, Screen, Edit);
+	k1--;
+}

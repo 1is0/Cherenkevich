@@ -1,0 +1,221 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  ClientHeight = 496
+  ClientWidth = 669
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 255
+    Top = 401
+    Width = 22
+    Height = 13
+    Caption = 'Key:'
+  end
+  object Label2: TLabel
+    Left = 262
+    Top = 428
+    Width = 15
+    Height = 13
+    Caption = 'ID:'
+  end
+  object StringGrid1: TStringGrid
+    Left = 508
+    Top = 24
+    Width = 153
+    Height = 273
+    RowCount = 50
+    TabOrder = 0
+    RowHeights = (
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24)
+  end
+  object TreeView1: TTreeView
+    Left = 272
+    Top = 24
+    Width = 185
+    Height = 273
+    Indent = 19
+    TabOrder = 1
+  end
+  object Memo1: TMemo
+    Left = 32
+    Top = 24
+    Width = 185
+    Height = 273
+    Lines.Strings = (
+      'Memo1')
+    TabOrder = 2
+  end
+  object Button1: TButton
+    Left = 27
+    Top = 312
+    Width = 96
+    Height = 25
+    Caption = 'Fill the tree'
+    TabOrder = 3
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 129
+    Top = 312
+    Width = 96
+    Height = 25
+    Caption = 'Balance the tree'
+    TabOrder = 4
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Left = 248
+    Top = 312
+    Width = 75
+    Height = 25
+    Caption = 'Direct '
+    TabOrder = 5
+    OnClick = Button3Click
+  end
+  object Button4: TButton
+    Left = 329
+    Top = 312
+    Width = 75
+    Height = 25
+    Caption = 'Reverse'
+    TabOrder = 6
+    OnClick = Button4Click
+  end
+  object Button5: TButton
+    Left = 410
+    Top = 312
+    Width = 75
+    Height = 25
+    Caption = 'Ascending'
+    TabOrder = 7
+    OnClick = Button5Click
+  end
+  object Button6: TButton
+    Left = 27
+    Top = 367
+    Width = 75
+    Height = 25
+    Caption = 'Find'
+    TabOrder = 8
+    OnClick = Button6Click
+  end
+  object Button7: TButton
+    Left = 129
+    Top = 367
+    Width = 75
+    Height = 25
+    Caption = 'Delete'
+    TabOrder = 9
+    OnClick = Button7Click
+  end
+  object Button8: TButton
+    Left = 283
+    Top = 367
+    Width = 75
+    Height = 25
+    Caption = 'Add'
+    TabOrder = 10
+    OnClick = Button8Click
+  end
+  object Button9: TButton
+    Left = 508
+    Top = 367
+    Width = 112
+    Height = 74
+    Caption = 'Solve'
+    TabOrder = 11
+    OnClick = Button9Click
+  end
+  object Edit1: TEdit
+    Left = 27
+    Top = 398
+    Width = 75
+    Height = 21
+    TabOrder = 12
+  end
+  object Edit2: TEdit
+    Left = 129
+    Top = 398
+    Width = 75
+    Height = 21
+    TabOrder = 13
+  end
+  object Edit3: TEdit
+    Left = 283
+    Top = 398
+    Width = 75
+    Height = 21
+    TabOrder = 14
+  end
+  object Edit4: TEdit
+    Left = 283
+    Top = 425
+    Width = 75
+    Height = 21
+    TabOrder = 15
+  end
+  object Edit5: TEdit
+    Left = 508
+    Top = 447
+    Width = 112
+    Height = 21
+    TabOrder = 16
+  end
+end

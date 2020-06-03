@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/06/01 20:47:02.000.217,=C:\Users\George_PC\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2020/06/01 20:47:02.000.107,=C:\Users\George_PC\Documents\Embarcadero\Studio\Projects\Project4PCH1.h</Transaction>
+    <Transaction>2020/06/01 20:47:11.000.586,C:\Users\George_PC\Documents\Embarcadero\Studio\Projects\Project4PCH1.h=C:\Users\George_PC\Documents\Embarcadero\Studio\Projects\Lab7PCH1.h</Transaction>
+    <Transaction>2020/06/01 20:47:11.000.592,C:\Users\George_PC\Documents\Embarcadero\Studio\Projects\Project4.cbproj=C:\Users\George_PC\Documents\Embarcadero\Studio\Projects\Lab7.cbproj</Transaction>
+    <Transaction>2020/06/01 20:47:23.000.339,C:\Users\George_PC\Documents\Embarcadero\Studio\Projects\Unit1.cpp=C:\Users\George_PC\Desktop\Labs\sem 2\OAIP\Lab 7\Unit1.cpp</Transaction>
+    <Transaction>2020/06/01 20:47:23.000.339,C:\Users\George_PC\Documents\Embarcadero\Studio\Projects\Unit1.h=C:\Users\George_PC\Desktop\Labs\sem 2\OAIP\Lab 7\Unit1.h</Transaction>
+    <Transaction>2020/06/01 20:47:23.000.339,C:\Users\George_PC\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\George_PC\Desktop\Labs\sem 2\OAIP\Lab 7\Unit1.dfm</Transaction>
+    <Transaction>2020/06/01 20:47:24.000.575,C:\Users\George_PC\Documents\Embarcadero\Studio\Projects\Lab7PCH1.h=C:\Users\George_PC\Desktop\Labs\sem 2\OAIP\Lab 7\Lab7PCH1.h</Transaction>
+    <Transaction>2020/06/01 20:47:25.000.670,C:\Users\George_PC\Documents\Embarcadero\Studio\Projects\Lab7.cbproj=C:\Users\George_PC\Desktop\Labs\sem 2\OAIP\Lab 7\Lab7.cbproj</Transaction>
+    <Transaction>2020/06/01 20:47:42.000.681,=C:\Users\George_PC\Desktop\Labs\sem 2\OAIP\Lab 7\Unit2.cpp</Transaction>
+    <Transaction>2020/06/01 20:48:04.000.599,C:\Users\George_PC\Desktop\Labs\sem 2\OAIP\Lab 7\Unit2.h=C:\Users\George_PC\Desktop\Labs\sem 2\OAIP\Lab 7\Stack.h</Transaction>
+    <Transaction>2020/06/01 20:48:04.000.599,C:\Users\George_PC\Desktop\Labs\sem 2\OAIP\Lab 7\Unit2.cpp=C:\Users\George_PC\Desktop\Labs\sem 2\OAIP\Lab 7\Stack.cpp</Transaction>
+    <Transaction>2020/06/01 20:48:26.000.015,=C:\Users\George_PC\Desktop\Labs\sem 2\OAIP\Lab 7\Unit2.cpp</Transaction>
+    <Transaction>2020/06/01 20:48:37.000.895,C:\Users\George_PC\Desktop\Labs\sem 2\OAIP\Lab 7\Unit2.cpp=C:\Users\George_PC\Desktop\Labs\sem 2\OAIP\Lab 7\Hash.cpp</Transaction>
+    <Transaction>2020/06/01 20:48:37.000.895,C:\Users\George_PC\Desktop\Labs\sem 2\OAIP\Lab 7\Unit2.h=C:\Users\George_PC\Desktop\Labs\sem 2\OAIP\Lab 7\Hash.h</Transaction>
+    <Transaction>2020/06/01 20:52:20.000.106,=C:\Users\George_PC\Desktop\Labs\sem 2\OAIP\Lab 7\Unit2.cpp</Transaction>
+    <Transaction>2020/06/01 20:52:27.000.741,C:\Users\George_PC\Desktop\Labs\sem 2\OAIP\Lab 7\Unit2.h=C:\Users\George_PC\Desktop\Labs\sem 2\OAIP\Lab 7\Task.h</Transaction>
+    <Transaction>2020/06/01 20:52:27.000.741,C:\Users\George_PC\Desktop\Labs\sem 2\OAIP\Lab 7\Unit2.cpp=C:\Users\George_PC\Desktop\Labs\sem 2\OAIP\Lab 7\Task.cpp</Transaction>
+  </Transactions>
+</BorlandProject>

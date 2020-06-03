@@ -1,0 +1,129 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 422
+  ClientWidth = 627
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 24
+    Top = 253
+    Width = 76
+    Height = 13
+    Caption = 'Hash table size:'
+  end
+  object Label2: TLabel
+    Left = 20
+    Top = 284
+    Width = 80
+    Height = 13
+    Caption = 'Number amount:'
+  end
+  object Label3: TLabel
+    Left = 392
+    Top = 234
+    Width = 92
+    Height = 13
+    Caption = 'Standard methods:'
+  end
+  object Label4: TLabel
+    Left = 251
+    Top = 328
+    Width = 199
+    Height = 13
+    Caption = 'Number elements lower than mean value:'
+  end
+  object Memo1: TMemo
+    Left = 24
+    Top = 8
+    Width = 249
+    Height = 209
+    Lines.Strings = (
+      'Memo1')
+    TabOrder = 0
+  end
+  object Memo2: TMemo
+    Left = 279
+    Top = 8
+    Width = 330
+    Height = 209
+    Lines.Strings = (
+      'Memo2')
+    TabOrder = 1
+  end
+  object Edit1: TEdit
+    Left = 106
+    Top = 250
+    Width = 55
+    Height = 21
+    TabOrder = 2
+  end
+  object Edit2: TEdit
+    Left = 106
+    Top = 281
+    Width = 55
+    Height = 21
+    TabOrder = 3
+  end
+  object Edit3: TEdit
+    Left = 360
+    Top = 284
+    Width = 75
+    Height = 21
+    TabOrder = 4
+  end
+  object Edit4: TEdit
+    Left = 456
+    Top = 284
+    Width = 75
+    Height = 21
+    TabOrder = 5
+  end
+  object Edit5: TEdit
+    Left = 456
+    Top = 325
+    Width = 121
+    Height = 21
+    TabOrder = 6
+  end
+  object Button1: TButton
+    Left = 271
+    Top = 253
+    Width = 75
+    Height = 25
+    Caption = 'Fill the table'
+    TabOrder = 7
+  end
+  object Button2: TButton
+    Left = 360
+    Top = 253
+    Width = 75
+    Height = 25
+    Caption = 'Find smth'
+    TabOrder = 8
+  end
+  object Button3: TButton
+    Left = 456
+    Top = 253
+    Width = 75
+    Height = 25
+    Caption = 'Add element'
+    TabOrder = 9
+  end
+  object Button4: TButton
+    Left = 544
+    Top = 253
+    Width = 75
+    Height = 25
+    Caption = 'Clear the table'
+    TabOrder = 10
+  end
+end

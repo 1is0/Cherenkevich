@@ -1,0 +1,191 @@
+//---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "Unit2.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+
+double GetSymbol(char symbol)
+{
+	switch(symbol)
+	{
+		case 'a':
+			return 5.6;
+		case 'b':
+			return 3.2;
+		case 'c':
+			return 0.9;
+		case 'd':
+			return 1.7;
+		case 'e':
+			return 4.8;
+	}
+	return 0;
+}
+
+bool SearchForSymbol(AnsiString s, char symbol)
+{
+	for(int i = 1; i < s.Length(); i++)
+	{
+		if(s[i] == symbol)
+			return true;
+	}
+	return false;
+}
+
+
+StackChar* Add(StackChar* head, char symbol)
+{
+	StackChar *add = new StackChar;
+	add -> ch = symbol;
+	add -> next = head;
+	head = add;
+	return head;
+}
+
+StackDouble* Add(StackDouble* head, double value)
+{
+	StackDouble *add = new StackDouble;
+	add -> value = value;
+	add -> next = head;
+	head = add;
+	return head;
+}
+
+
+StackChar* Read(StackChar* head, char* symbol)
+{
+	StackChar *read = new StackChar;
+	read = head;
+	*symbol = head -> ch;
+	head = head -> next;
+	delete read;
+	return head;
+}
+
+StackDouble* Read(StackDouble* head, double* value)
+{
+	StackDouble *read = new StackDouble;
+	read = head;
+	*value = head -> value;
+	delete read;
+	return head;
+}
+
+
+int Operation(char sign)
+{
+	switch(sign)
+	{
+		case '(':
+		case ')':
+			return 0;
+
+		case '+':
+		case '-':
+			return 1;
+
+		case '*':
+		case '/':
+			return 2;
+	}
+    return 0;
+}
+
+AnsiString ToOPZ(AnsiString str)
+{
+	AnsiString strp="";
+	StackChar* head = new StackChar;
+	head = nullptr;
+	bool b;
+	int p;
+	char c,c1;
+	AnsiString zn = "+-(*)/";
+	int n = str.Length();
+
+	for(int i=1;i<=n;i++)
+	{
+		c = str[i];
+		if (SearchForSymbol(zn,c))
+		{
+			if (c=='(') head=Add(head,c);
+			else
+			{
+				if (c==')')
+				{
+					head=Read(head,&c);
+					while (c!='(')
+					{
+						strp += c;
+						head = Read(head,&c);
+					}
+				}
+
+				else
+				{
+					if (head == nullptr)
+						head = Add(head,c);
+					else
+					{
+						p = Operation(c);
+						do
+						{
+							head = Read(head,&c1);
+							b = Operation(c1) >= p;
+							if (b)
+								strp += c1;
+							else head = Add(head,c1);
+						} while(head&&b);
+						head = Add(head,c);
+					}
+				}
+			}
+
+
+
+	   }
+	   else strp += c;
+   }
+
+   while (head!=NULL)
+   {
+		head=Read(head,&c);
+		strp+=c;
+   }
+
+   return strp;
+}
+
+double Calculate(AnsiString s)
+{
+	char c;
+	double x, y, rez;
+	StackDouble* head = new StackDouble;
+	head = nullptr;
+	AnsiString zn = "+*-/";
+	int n = s.Length();
+
+   for(int i = 1; i <= n; i++)
+   {
+	   c = s[i];
+
+	   if (!SearchForSymbol(zn,c)) head = Add(head, GetSymbol(c));
+	   else
+	   {
+		 head = Read(head,&y);
+		 head = Read(head,&x);
+
+		 switch (c)
+		 {
+		   case '+': rez = x+y; break;
+		   case '-': rez = x-y; break;
+		   case '*': rez = x*y; break;
+		   case '/': rez = x/y; break;
+		 }
+		   head = Add(head,rez);
+	   }
+
+   }
+   return rez;
+}

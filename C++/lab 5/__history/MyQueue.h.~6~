@@ -1,0 +1,27 @@
+//---------------------------------------------------------------------------
+
+#ifndef MyQueueH
+#define MyQueueH
+#include "DoubleList.h"
+#include <ctime>
+//---------------------------------------------------------------------------
+#endif
+
+class ind : public dvusp
+{
+	public:
+
+	  ind *next, *prev;
+
+	  void Show(ind** head, TListBox *ListBox1);
+
+	  void MakeQ(ind** he, TListBox *ListBox1, int d) ;
+
+	  ind* Remove(ind* head, int n) ;
+
+	  ind* Create(TEdit* Edit3, ind *he,TListBox *ListBox1);
+
+	  ind* Delete(ind* head,TListBox *ListBox1);
+
+	  ind* ochist(ind *he,TListBox *ListBox1);
+};

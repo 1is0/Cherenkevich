@@ -1,0 +1,91 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "Unit1.h"
+#include "Solution.h"
+
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TForm1 *Form1;
+int n=9;
+tree* t = new tree;
+
+//---------------------------------------------------------------------------
+__fastcall TForm1::TForm1(TComponent* Owner)
+	: TForm(Owner)
+{
+    t = NULL;
+	StringGrid1->Cells[0][0]= "ID";
+	StringGrid1->Cells[1][0]="Key";
+	StringGrid1->Cells[0][1]="apple"; StringGrid1->Cells[1][1]="5";
+	StringGrid1->Cells[0][2]="banana"; StringGrid1->Cells[1][2]="2";
+	StringGrid1->Cells[0][3]="car"; StringGrid1->Cells[1][3]="4";
+	StringGrid1->Cells[0][4]="analysis"; StringGrid1->Cells[1][4]="1";
+	StringGrid1->Cells[0][5]="bread"; StringGrid1->Cells[1][5]="7";
+	StringGrid1->Cells[0][6]="complain"; StringGrid1->Cells[1][6]="6";
+	StringGrid1->Cells[0][7]="enemy"; StringGrid1->Cells[1][7]="8";
+	StringGrid1->Cells[0][8]="spark"; StringGrid1->Cells[1][8]="0";
+	StringGrid1->Cells[0][9]="builder"; StringGrid1->Cells[1][9]="9";
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::Button1Click(TObject *Sender)
+{
+	int k; AnsiString f;
+	for(int i = 1; i <= n; i++)
+	{
+	  f = StringGrid1 -> Cells[0][i];
+	  k = StrToInt(StringGrid1 -> Cells[1][i]);
+	  t -> push(&t,k,f);
+	}
+	int kl =- 1;
+	TreeView1 -> Items -> Clear();
+	ViewTree(t, kl, TreeView1);
+	TreeView1 -> FullExpand();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::Button2Click(TObject *Sender)
+{
+	if(t -> isBalanced(t) == 0)
+	{
+		t = t -> balance(t, n);
+		int kl =- 1;
+		TreeView1 -> Items -> Clear();
+		ViewTree(t, kl, TreeView1);
+		TreeView1 -> FullExpand();
+	}
+}
+//---------------------------------------------------------------------------
+
+
+void __fastcall TForm1::Button3Click(TObject *Sender)
+{
+	Memo1 -> Clear();
+	t -> pr_obx(t, Memo1);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::Button4Click(TObject *Sender)
+{
+	Memo1 -> Clear();
+	t -> obr_obx(t, Memo1);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::Button5Click(TObject *Sender)
+{
+	Memo1 -> Clear();
+	t -> povoz_obx(t, Memo1);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::Button6Click(TObject *Sender)
+{
+    Memo1->Clear();
+   	t->poisk(t,StrToInt(Edit1->Text),Memo1);
+}
+//---------------------------------------------------------------------------
+
